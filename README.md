@@ -3,6 +3,9 @@
 A rather simple plugin that tries to make the children of a container equal widths
 
 
+## Usage
+
+
 	<style>
 	.child {
 		display: inline-block;
@@ -20,9 +23,7 @@ A rather simple plugin that tries to make the children of a container equal widt
 	<script src="../src/jquery.equal-width-children.js"></script>		
 	<script>
 		$(function() {
-			$("#container").equalWidthChildren({
-				propertyName: "a custom value"
-			});
+			$("#container").equalWidthChildren();
 		});
 	</script>		
 	</body>
