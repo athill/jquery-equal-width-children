@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Equal Width Children</title>
+		<style>
+		#container {
+			background-color: blue;
+			margin: 0;
+			padding: 0;
+		}
+		.child {
+			display: inline-block;
+			background-color: red;
+		}
+		</style>
+
+	</head>
+	<body>
+		<ul id="container">
+			<li class="child">child 1
+			<li class="child">child 2
+			<li class="child">child 3
+			<li class="child">child 4
+		</ul>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../src/jquery.equal-width-children.js"></script>		
+		<script>
+			$(function() {
+				$("#container").equalWidthChildren({
+
+				});
+			});
+		</script>
+	</body>
+</html>

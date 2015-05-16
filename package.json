@@ -1,0 +1,35 @@
+{
+  "name": "jquery-equal-width-children",
+  "version": "1.0.0",
+  "description": "Given a container, makes its children equal widths.",
+  "keywords": [
+    "jquery-plugin",
+    "jquery",
+    "equal",
+    "width",
+    "children",
+    "plugins"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:athill/jquery-equal-width-children.git"
+  },
+  "author": {
+    "name": "Andy Hill",
+    "email": "andy@andyhill.us",
+    "url": "https://github.com/athill"
+  },
+  "homepage": "https://github.com/athill/jquery-equal-width-children",
+  "contributors": [
+    {
+      "name": "Andy Hill",
+      "email": "andy@andyhill.us",
+      "url": "https://github.com/athill"
+    },
+  ],
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "scripts": {
+  }
+}
