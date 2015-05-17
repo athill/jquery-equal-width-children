@@ -27,3 +27,11 @@ A rather simple plugin that tries to make the children of a container equal widt
 		});
 	</script>		
 	</body>
+
+
+	## Options
+
+| Option        | Description                         | Type  | Default |
+| ------------- |:-----------------------------------:| :----:| ------: |
+| gutter        | space between children              | int   | 0       |
+| fudge         | subtract from width if issues arise | int   | 0       |
