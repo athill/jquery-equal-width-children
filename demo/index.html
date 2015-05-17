@@ -5,6 +5,8 @@
 		<style>
 		#container {
 			background-color: blue;
+		}
+		ul {
 			margin: 0;
 			padding: 0;
 		}
@@ -16,18 +18,20 @@
 
 	</head>
 	<body>
-		<ul id="container">
+	<div id="container">
+		<ul>
 			<li class="child">child 1
 			<li class="child">child 2
 			<li class="child">child 3
 			<li class="child">child 4
 		</ul>
+	</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script src="../src/jquery.equal-width-children.js"></script>		
 		<script>
 			$(function() {
 				$("#container").equalWidthChildren({
-
+					children: $('#container li')
 				});
 			});
 		</script>

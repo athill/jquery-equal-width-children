@@ -6,7 +6,8 @@
 	var pluginName = "equalWidthChildren",
 		defaults = {
 			fudge: 0,
-			gutter: 0
+			gutter: 0,
+			children: null
 		};
 
 	// The actual plugin constructor
@@ -23,7 +24,7 @@
 		init: function () {
 			var $element = $(this.element);
 			console.log($element.width());
-			var $children = $element.children();
+			var $children = (this.settings.children === null) ? $element.children() : this.settings.children;
 			var len = $children.length;
 			var width = $element.width()/len - this.settings.fudge;
 			console.log(width);
