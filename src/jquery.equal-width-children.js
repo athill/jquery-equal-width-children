@@ -23,11 +23,9 @@
 	$.extend(Plugin.prototype, {
 		init: function () {
 			var $element = $(this.element);
-			console.log($element.width());
 			var $children = (this.settings.children === null) ? $element.children() : this.settings.children;
 			var len = $children.length;
 			var width = $element.width()/len - this.settings.fudge;
-			console.log(width);
 			if (this.settings.gutter > 0) {
 				width -= ((len - 1) * this.settings.gutter)/len;
 				$children.not(':last-child').css({
